@@ -19,7 +19,7 @@ const containerStyle = {
 
 const InifiniteScroll = () => {
     const [postList, setPostList] = useState({
-        list: [1, 2, 3, 4]
+        list: ["Introduction", "Many projects", "Keep In touch", 4]
     });
     const [page, setPage] = useState(1);
 
