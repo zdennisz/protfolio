@@ -7,7 +7,7 @@ const Outro = () => {
 
     return (
         <div className="OutroBoundingBox">
-            <div className="TitleTop"></div>
+            <div className="TitleTop">Outro Stuff</div>
             <div className="LineTop"></div>
             <div className="PortraitOutro"></div>
             <div className="ContentContainerOutro">

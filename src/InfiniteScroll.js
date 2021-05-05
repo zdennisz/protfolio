@@ -3,6 +3,9 @@ import React, {
     useRef,
     useState
 } from 'react';
+import CardsList from './CardsList';
+import Introduction from './Introduction';
+import Outro from './Outro';
 const divStyle = {
     color: 'blue',
     height: '250px',
@@ -19,9 +22,9 @@ const containerStyle = {
 
 const InifiniteScroll = () => {
     const [postList, setPostList] = useState({
-        list: ["Introduction", "Many projects", "Keep In touch", 4]
+        list:  [ <Introduction/> ]
     });
-    const [page, setPage] = useState(1);
+    const [page, setPage] = useState(0);
 
     const loader = useRef(null);
 
@@ -35,15 +38,22 @@ const InifiniteScroll = () => {
         if (loader.current) {
             observer.observe(loader.current)
         }
-
-
     }, []);
 
     useEffect(()=>{
-        const newList=postList.list.concat([1,1,1,1,1,1]);
-        setPostList({
-            list:newList
-        })
+        if(page === 2){
+            const newList=postList.list.concat([<CardsList/>]);
+            setPostList({
+                list:newList
+            })
+        }else if(page ===3 ){
+            const newList=postList.list.concat([<Outro/>]);
+            setPostList({
+                list:newList
+            })
+
+        }
+      
     },[page])
 
     const handleObserver=(entities)=>{

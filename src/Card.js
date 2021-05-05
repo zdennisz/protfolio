@@ -4,7 +4,7 @@ import React, {
 
 
 
-const Cards = (props) => {
+const Card = (props) => {
 
     return (
         <div className="CardContainer">
@@ -20,4 +20,4 @@ const Cards = (props) => {
 
 };
 
-export default Cards;
+export default Card;

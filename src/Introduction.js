@@ -12,8 +12,8 @@ const Introduction = (props) => {
         <>
             {props.isMobile ?
                 <NavBar /> : ""}
-            <div className="IntroTitle"></div>
-            <img className="TopImageBackground" src={props.image} alt="Background Image of Gym Equipment" />
+            <div className="IntroTitle">Itroduction Page</div>
+            {/* <img className="TopImageBackground" src={props.image} alt="Background Image of Gym Equipment" /> */}
         </>
     )
 }
