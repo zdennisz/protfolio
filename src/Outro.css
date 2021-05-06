@@ -1,0 +1,30 @@
+.outro {
+  height: 30vh;
+  background: url(./Images/outro_background.svg);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.title_top {
+  color: rgba(1, 255, 195, 1);
+  margin-left: 8%;
+  background-color: #222222;
+}
+
+.line_top {
+  border: 1px solid #ffffff;
+}
+
+.content_container_outro {
+  background: #292929;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  top: 7%;
+  position: relative;
+}
+.portrait{
+    background:url(./Images/profile.svg) no-repeat center center fixed;;
+}

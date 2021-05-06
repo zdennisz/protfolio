@@ -1,0 +1,21 @@
+.intro {
+  background: url(/src/Images/IntroductionBackgroundImage.svg) no-repeat center
+    center fixed;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.intro_title {
+    text-align: left;
+    margin-top: 11%;
+    margin-left: 8%;
+    font-weight: 400;
+    font-size: 18px;
+    word-break: break-word;
+    margin-right: 35%;
+}
