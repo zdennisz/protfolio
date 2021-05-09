@@ -6,15 +6,28 @@ import React, {
 import CardsList from './CardsList';
 import Introduction from './Introduction';
 import Outro from './Outro';
-
+import firebase from "./Firebase";
 
 
 const App = () => {
- var list=["1","2","3","4"]
+const [projects,setProjects]=useState([]);
+
+    useEffect(() => {
+        firebase.database().ref("/").once("value", (querySnapShot) => {
+            let data = querySnapShot.val();
+       
+            setProjects(data)
+      
+        });
+    },
+        []
+    );
+
+   
     return (<div className="page_container" >
-         <Introduction/>
-         <CardsList list={list} />
-         <Outro/>
+        <Introduction />
+        <CardsList projects={projects} />
+        <Outro />
 
     </div>)
 }
