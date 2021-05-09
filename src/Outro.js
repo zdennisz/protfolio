@@ -5,21 +5,40 @@ import './Outro.css'
 
 const Outro = () => {
 
-    return (
+const handleEmailButtonClick=()=>{
+
+}
+const handleGitButtonClick=()=>{
+    
+}
+const handleLinkeninButtonClick=()=>{
+    
+}
+
+    return (<>
+        <div className="footer_content">
+        <hr className="left_top_line" /><div className="title_top">Keep In Touch</div> <hr className="right_top_line" />
+    </div>
         <div className="outro">
-            <div className="title_top">Keep in Touch</div>
-            <div className="line_top"></div>
-            <div className="portrait"></div>
+         
+
             <div className="content_container_outro">
-                <div className="ContentOutro"></div>
-                <div className="ButtonsContainerMiddle">
-                    <div className="EmailButton"></div>
-                    <div className="LinkenInButton"></div>
-                    <div className="GithubButton"></div>
+                <div className="content_outro">
+                    <div className="content_something">
+                        <div className="end_message">Thanks for reaching out!<br/> Feel free to leave a message or contact me via</div>          
+                    <div className="buttons_container">
+                        <div className="button button_email" onClick={handleEmailButtonClick}></div>
+                        <div className="button button_linkenin"  onClick={handleLinkeninButtonClick}></div>
+                        <div className="button button_git"  onClick={handleGitButtonClick}></div> 
+                    </div>
+                    </div>
                 </div>
+                <div className="portrait"></div>
+
             </div>
-          
+
         </div>
+        </>
     )
 
 }

@@ -1,30 +1,96 @@
 .outro {
-  height: 30vh;
-  background: url(./Images/outro_background.svg);
-  bottom: 0;
-  position: fixed;
+  background: url(./Images/outro_background.png);
   width: 100%;
 }
 
 .title_top {
   color: rgba(1, 255, 195, 1);
-  margin-left: 8%;
-  background-color: #222222;
 }
 
-.line_top {
-  border: 1px solid #ffffff;
+hr {
+  color: white;
+  background-color: white;
+  height: 2px;
+  border: none;
+}
+.left_top_line {
+  flex-grow: 1;
 }
 
+.right_top_line {
+  flex-grow: 20;
+}
+
+.title_top {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: xx-large;
+}
+.footer_content {
+  display: flex;
+  align-items: center;
+  background-color: #292929;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
 .content_container_outro {
-  background: #292929;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
   width: 70%;
-  height: 70%;
-  left: 15%;
-  top: 7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
+  left: 13%;
+
 }
-.portrait{
-    background:url(./Images/profile.svg) no-repeat center center fixed;;
+.portrait {
+  background: url(./Images/profile.png) no-repeat;
+  width: 10vw;
+  height: 20vw;
+  background-position: center;
+}
+.content_outro {
+  flex-grow: 2;
+  background-color: #292929;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttons_container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-evenly;
+  padding: 0 1% 10% 0;
+}
+
+.button {
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  cursor: pointer;
+  background-position: center;
+}
+.button_email {
+  background-image: url(./Images/emailButton.png);
+}
+
+.button_git {
+  background-image: url(./Images/gitIconButton.png);
+}
+
+.button_linkenin {
+  background-image: url(./Images/linkedinButton.png);
+}
+.end_message {
+  word-wrap: break-word;
+  color: white;
+  font-size: medium;
+  padding: 5% 0% 5% 0%;
+}
+.content_something{
+ text-align: center;
+ line-height: 4vw;
 }

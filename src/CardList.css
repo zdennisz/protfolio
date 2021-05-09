@@ -3,4 +3,20 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #292929;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  background-color: #292929;
+  padding-top: 4%;
+}
+
+.left_top_line {
+  flex-grow: 1;
+}
+
+.right_top_line {
+  flex-grow: 20;
 }
