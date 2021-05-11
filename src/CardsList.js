@@ -1,28 +1,23 @@
 import React, { useState } from 'react';
-
+import Card from './Card'
 import './CardList.css'
 
 
 
 const CardsList = (props) => {
-    const data=props.projects
+    const data = props.projects
 
+    const listOfCards = data.map((card, index) => {
+        return (<li key={index}><Card card={card} /></li>)
+
+    });
     return (<>
         <div className="header_content">
-        <hr className="left_top_line"/><div className="title_top">Projects for Fun</div> <hr className="right_top_line"/></div>
-       
-        <div className="card_list" >
-            {
-                data.map((card) => {
-                    console.log(card)
-                    return (<div key={card.id}>
-                        <>{card.title}</>
-                    </div>)
-                })
-            }
+            <hr className="left_top_line" /><div className="title_top">Projects for Fun</div> <hr className="right_top_line" /></div>
 
-        </div>
-        </>
+        <ul className="card_list" >{listOfCards}
+        </ul>
+    </>
     )
 }
 

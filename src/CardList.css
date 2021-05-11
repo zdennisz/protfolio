@@ -1,15 +1,14 @@
 .card_list{
-  display: flex;  
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #292929;
+  background-color: #222222;
+  margin:0;
+  list-style-type: none;
+  columns: 2;
 }
 
 .header_content {
   display: flex;
   align-items: center;
-  background-color: #292929;
+  background-color: #222222;
   padding-top: 4%;
 }
 

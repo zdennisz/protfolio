@@ -1,0 +1,34 @@
+.card_container {
+  height: fit-content;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #292929;
+  color: white;
+}
+.title_top {
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+}
+.card_content {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.basic_button {
+  width: 48px;
+  height: 24px;
+  background-color: #292929;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #01ffc3;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px;
+}

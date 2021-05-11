@@ -29,7 +29,7 @@ hr {
 .footer_content {
   display: flex;
   align-items: center;
-  background-color: #292929;
+  background-color: #222222;
   padding-top: 4%;
   padding-bottom: 2%;
 }
@@ -71,7 +71,7 @@ hr {
   background-repeat: no-repeat;
   background-size: auto;
   cursor: pointer;
-  background-position: center;
+  background-position: bottom;
 }
 .button_email {
   background-image: url(./Images/emailButton.png);
