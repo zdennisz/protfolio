@@ -14,9 +14,7 @@ const CardsList = (props) => {
     return (<>
         <div className="header_content">
             <hr className="left_top_line" /><div className="title_top">Projects for Fun</div> <hr className="right_top_line" /></div>
-
-        <ul className="card_list" >{listOfCards}
-        </ul>
+        <ul className="card_list" >{listOfCards}</ul>
     </>
     )
 }

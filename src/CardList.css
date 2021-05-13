@@ -2,7 +2,9 @@
   background-color: #181818;
   margin:0;
   list-style-type: none;
-  columns: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+
 }
 
 .header_content {
@@ -19,3 +21,4 @@
 .right_top_line {
   flex-grow: 20;
 }
+
