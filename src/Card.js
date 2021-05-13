@@ -7,14 +7,6 @@ import './Card.css'
 const Card = (props) => {
 
     const data = props.card
-
-    const backgroundImageStyle = {
-        // backgroundImage: 'url('+props.imageBackground+')',
-        backgroundColor: 'white',
-        height: '20%',
-        width: '100%',
-    };
-
     const listOfProps = data.description.map((item) => {
 
         return (<li>{item}</li>)
@@ -28,15 +20,15 @@ const Card = (props) => {
         if (item.hasOwnProperty('github')) {
             buttonClass += ' github_button';
             link = item.github;
-            buttonContent="Github";
+            buttonContent = "Github";
         } else if (item.hasOwnProperty('website')) {
             buttonClass += ' website_button';
             link = item.website;
-            buttonContent="Website";
+            buttonContent = "Website";
         } else if (item.hasOwnProperty('googleplay')) {
             buttonClass += ' googleplay_button'
             link = item.googleplay;
-            buttonContent="Google Play";
+            buttonContent = "Google Play";
         }
 
         if (link === "") {
@@ -46,9 +38,12 @@ const Card = (props) => {
         }
 
     })
+
     return (
         <div className="card_container">
-            <div style={backgroundImageStyle}></div>
+            <div className="image_container">
+                <img className="image" src={data.image} />
+            </div>
             <div className="title_top">{data.title}</div>
             <ul className="card_content">{listOfProps}</ul>
             <div className="links">{listOfButtons}</div>
