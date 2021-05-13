@@ -31,12 +31,15 @@
   cursor: pointer;
   border-style: solid;
   border-color: #01ffc3;
-  color: white;
+  color: #01ffc3;
   text-decoration: none;
   text-align: center;
   padding: 2px;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .image {
   max-width: 100%;
