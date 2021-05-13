@@ -1,5 +1,5 @@
 .card_list{
-  background-color: #222222;
+  background-color: #181818;
   margin:0;
   list-style-type: none;
   columns: 2;
@@ -8,7 +8,7 @@
 .header_content {
   display: flex;
   align-items: center;
-  background-color: #222222;
+  background-color: #181818;
   padding-top: 4%;
 }
 
