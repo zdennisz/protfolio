@@ -1,6 +1,7 @@
 .outro {
   background: url(./Images/outro_background.png) no-repeat;
   background-size: cover;
+  margin-top: -30px;
 }
 
 .title_top {
@@ -97,4 +98,10 @@ hr {
 .content_something {
   text-align: center;
   line-height: 4vw;
+}
+@media only screen and (min-width:350px){
+  .portrait{
+    height: 30vw;
+  }
+
 }

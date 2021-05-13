@@ -18,3 +18,9 @@
     font-size: xx-large;
     padding-bottom: 4%;
 }
+@media only screen and (min-width:350px){
+  .intro_title{
+    font-size: x-large;
+  }
+
+}
