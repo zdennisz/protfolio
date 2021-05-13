@@ -1,6 +1,6 @@
 .outro {
-  background: url(./Images/outro_background.png);
-  width: 100%;
+  background: url(./Images/outro_background.png) no-repeat;
+  background-size: cover;
 }
 
 .title_top {
@@ -31,7 +31,6 @@ hr {
   align-items: center;
   background-color: #181818;
   padding-top: 4%;
-  padding-bottom: 2%;
 }
 .content_container_outro {
   width: 70%;
@@ -41,20 +40,17 @@ hr {
   position: relative;
   left: 13%;
   display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-auto-rows: 1fr 1fr 1fr;
-gap: 0px 0px;
-grid-template-areas: ". . portrait" "content_outro content_outro portrait" ". . portrait";
-
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . portrait" "content_outro content_outro portrait" ". . portrait";
 }
-
-
 
 .portrait {
   background: url(./Images/profile.png) no-repeat;
   height: 20vw;
-  background-size:contain;
-  grid-area: portrait; 
+  background-size: contain;
+  grid-area: portrait;
 }
 .content_outro {
   background-color: #292929;
@@ -63,7 +59,7 @@ grid-template-areas: ". . portrait" "content_outro content_outro portrait" ". . 
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-area: content_outro; 
+  grid-area: content_outro;
 }
 .buttons_container {
   display: flex;
@@ -98,7 +94,7 @@ grid-template-areas: ". . portrait" "content_outro content_outro portrait" ". . 
   font-size: medium;
   padding: 5% 0% 5% 0%;
 }
-.content_something{
- text-align: center;
- line-height: 4vw;
+.content_something {
+  text-align: center;
+  line-height: 4vw;
 }
