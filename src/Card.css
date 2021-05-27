@@ -20,8 +20,8 @@
 .card_content {
   list-style-type: disc;
   margin-bottom: 8px;
-  text-align: center;
-  padding: 10% 0 10% 1%;
+  text-align: left;
+  padding: 10% 0 10% 10%;
 }
 
 .basic_button {
