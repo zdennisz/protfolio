@@ -18,9 +18,18 @@
     font-size: xx-large;
     padding-bottom: 4%;
 }
-@media only screen and (min-width:350px){
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .intro_title{
-    font-size: x-large;
+    font-size: xxx-large;
   }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
 
 }

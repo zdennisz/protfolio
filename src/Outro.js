@@ -15,7 +15,7 @@ const Outro = () => {
 
             <div className="content_container_outro">
                 <div className="content_outro">
-                    <div className="content_something">
+                    <div className="content_container">
                         <div className="end_message">Thanks for reaching out!<br/> Feel free to leave a message or contact me via</div>          
                     <div className="buttons_container">
                         <a href="mailto:zdennisz@gmail.com" className="button button_email" ></a>
