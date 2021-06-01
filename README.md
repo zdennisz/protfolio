@@ -1,4 +1,7 @@
- ### **Link:**  https://zdennisz.github.io/protfolio/
+
+![screen-recorder-tue-jun-01-2021-16-39-17](https://user-images.githubusercontent.com/15849186/120333092-08306780-c2f8-11eb-884d-15d48bf7a317.gif)
+
+### **Link:**  https://zdennisz.github.io/protfolio/
 <br/>
 This is my personal website that you can see my latest work at :)
 
