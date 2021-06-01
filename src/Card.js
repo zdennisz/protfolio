@@ -1,6 +1,4 @@
-import React, {
-    useEffect,
-} from 'react';
+import React from 'react';
 import './Card.css'
 
 
@@ -42,10 +40,10 @@ const Card = (props) => {
     return (
         <div className="card_container">
             <div className="image_container">
-                <img className="image" src={data.image} />
+                <img className="image" src={data.image} alt="Image of Card" />
             </div>
             <div className="title_top">{data.title}</div>
-            <ul className="card_content">{listOfProps}</ul>
+            <ul  className="card_content">{listOfProps}</ul>
             <div className="links">{listOfButtons}</div>
         </div>
     )
