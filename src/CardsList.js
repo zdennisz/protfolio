@@ -8,7 +8,7 @@ const CardsList = (props) => {
     const data = props.projects
 
     const listOfCards = data.map((card, index) => {
-        return (<li key={index}><Card card={card} /></li>)
+        return (<li key={index.toString()}><Card card={card} /></li>)
 
     });
     return (<>

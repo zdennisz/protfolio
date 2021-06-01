@@ -7,12 +7,12 @@ import './Card.css'
 const Card = (props) => {
 
     const data = props.card
-    const listOfProps = data.description.map((item) => {
+    const listOfProps = data.description.map((item,index) => {
 
-        return (<li>{item}</li>)
+        return (<li key={index.toString()}>{item}</li>)
     })
 
-    const listOfButtons = data.buttons.map((item) => {
+    const listOfButtons = data.buttons.map((item,index) => {
 
         let buttonClass = 'basic_button';
         let link;
@@ -34,7 +34,7 @@ const Card = (props) => {
         if (link === "") {
             return (<></>)
         } else {
-            return (<a href={link} className={buttonClass}>{buttonContent}</a>)
+            return (<a key={index.toString()} href={link} className={buttonClass}>{buttonContent}</a>)
         }
 
     })

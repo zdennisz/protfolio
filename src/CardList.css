@@ -3,10 +3,11 @@
   margin: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-gap: 4vw;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
+  grid-gap: 3vw 4vw;
   list-style-position: inside;
   padding-bottom: 21%;
+  padding-inline: 16%;
 }
 
 .header_content {
@@ -33,11 +34,19 @@
   }
 }
 
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
   .card_list {
     padding-inline: 16%;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1220px) {
+  .card_list {
+    padding-inline: 16%;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr) ); 
+
   }
 }
