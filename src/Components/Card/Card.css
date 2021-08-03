@@ -16,12 +16,16 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 8px;
+  padding-inline-start: 0;
 }
 .card_content {
   list-style-type: disc;
   margin-bottom: 8px;
   text-align: left;
   padding: 10% 0 10% 10%;
+}
+.li_single_item{
+  list-style-type: none;
 }
 
 .basic_button {
