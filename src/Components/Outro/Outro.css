@@ -1,5 +1,5 @@
 .outro {
-  background: url(./Images/outro_background.png) no-repeat;
+  background: url(../../Images/outro_background.png) no-repeat;
   background-size: cover;
   margin-top: -30px;
 }
@@ -48,7 +48,7 @@ hr {
 }
 
 .portrait {
-  background: url(./Images/profile.png) no-repeat;
+  background: url(../../Images/profile.png) no-repeat;
   height: 20vw;
   background-size: contain;
   grid-area: portrait;
@@ -79,15 +79,15 @@ hr {
   background-position: bottom;
 }
 .button_email {
-  background-image: url(./Images/emailButton.png);
+  background-image: url(../../Images/emailButton.png);
 }
 
 .button_git {
-  background-image: url(./Images/gitIconButton.png);
+  background-image: url(../../Images/gitIconButton.png);
 }
 
 .button_linkenin {
-  background-image: url(./Images/linkedinButton.png);
+  background-image: url(../../Images/linkedinButton.png);
 }
 .end_message {
   word-wrap: break-word;

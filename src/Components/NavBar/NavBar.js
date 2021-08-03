@@ -7,19 +7,19 @@ import React, {
 const NavBar = (props) => {
 
     const handleHomeNav = () => {
-       if(props){
-        props.navHome();
-       }
-        
+        if (props) {
+            props.navHome();
+        }
+
     }
 
     const handleProjectsNav = () => {
-        if(props){
+        if (props) {
             props.navProjects();
         }
     }
     const handleContactNav = () => {
-        if(props){
+        if (props) {
             props.navContact();
         }
     }

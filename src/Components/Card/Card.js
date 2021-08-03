@@ -5,12 +5,12 @@ import './Card.css'
 const Card = (props) => {
 
     const data = props.card
-    const listOfProps = data.description.map((item,index) => {
+    const listOfProps = data.description.map((item, index) => {
 
         return (<li key={index.toString()}>{item}</li>)
     })
 
-    const listOfButtons = data.buttons.map((item,index) => {
+    const listOfButtons = data.buttons.map((item, index) => {
 
         let buttonClass = 'basic_button';
         let link;
@@ -43,7 +43,7 @@ const Card = (props) => {
                 <img className="image" src={data.image} alt="Image of Card" />
             </div>
             <div className="title_top">{data.title}</div>
-            <ul  className="card_content">{listOfProps}</ul>
+            <ul className="card_content">{listOfProps}</ul>
             <div className="links">{listOfButtons}</div>
         </div>
     )
